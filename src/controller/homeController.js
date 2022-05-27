@@ -10,7 +10,8 @@ let getHomepage = (req, res) => {
             console.log(results); // results contains rows returned by server
             data = results.map((row) => { return row })
             console.log('>>> check data: ', data)
-        })
+        }
+    )
 
     // return res.render('test/index.ejs')
     return res.render('test/index.ejs', { dataUser: JSON.stringify(data) })
